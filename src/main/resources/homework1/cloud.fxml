@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="homework1.Controller">
+    <ListView fx:id="listView" layoutX="14.0" layoutY="14.0" prefHeight="324.0" prefWidth="567.0"/>
+    <Label fx:id="output" layoutX="14.0" layoutY="338.0" prefHeight="46.0" prefWidth="448.0"/>
+    <Button onAction="#send" layoutX="464.0" layoutY="343.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="117.0" text="send"/>
+</AnchorPane>
