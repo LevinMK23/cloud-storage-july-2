@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="homework1.Controller">
-    <ListView fx:id="listView" layoutX="14.0" layoutY="14.0" prefHeight="324.0" prefWidth="567.0"/>
-    <Label fx:id="output" layoutX="14.0" layoutY="338.0" prefHeight="46.0" prefWidth="448.0"/>
-    <Button onAction="#send" layoutX="464.0" layoutY="343.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="117.0" text="send"/>
+<AnchorPane fx:controller="homework1.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <ListView fx:id="clientView" layoutX="14.0" layoutY="38.0" prefHeight="346.0" prefWidth="261.0"/>
+   <ListView fx:id="serverView" layoutX="325.0" layoutY="38.0" prefHeight="346.0" prefWidth="261.0"/>
+   <Button onAction="#upload" layoutX="277.0" layoutY="38.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="47.0" text="&gt;">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Button>
+   <Button onAction="#downLoad" layoutX="277.0" layoutY="229.0" mnemonicParsing="false" prefHeight="155.0" prefWidth="47.0" text="&lt;">
+      <font>
+         <Font size="24.0"/>
+      </font>
+   </Button>
+   <TextField fx:id="clientPath" editable="false" layoutX="14.0" layoutY="11.0" prefHeight="13.0" prefWidth="234.0"/>
+   <TextField fx:id="serverPath" editable="false" layoutX="325.0" layoutY="11.0" prefHeight="13.0" prefWidth="234.0"/>
+   <Button onAction="#clientPathUp" layoutX="248.0" layoutY="11.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="22.0" text="Button"/>
+   <Button onAction="#serverPathUp" layoutX="559.0" layoutY="11.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="22.0" text="Button"/>
 </AnchorPane>
